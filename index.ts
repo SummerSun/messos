@@ -1,14 +1,5 @@
 'use strict';
 
-export interface WorkspaceConfiguration {
-    get<T>(section: string): T | undefined;
-    get<T>(section: string, defaultValue: T): T;
-    has(section: string): boolean;
-    inspect<T>(section: string): { key: string; defaultValue?: T; globalValue?: T; workspaceValue?: T, workspaceFolderValue?: T } | undefined;
-    readonly [key: string]: any;
-}
-
-
 export function getRightTerminalCommand(platform: string, command: string): string {
     return (platform === "linux" || platform === "darwin") ? `sudo ${command}` : command;
 }
