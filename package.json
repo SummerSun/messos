@@ -1,0 +1,19 @@
+{
+  "name": "messos",
+  "version": "1.0.0",
+  "description": "Terminal is a small package that can be used with vscode to control the terminal execution in vscode.",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Summer Sun",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "os": "^0.1.1"
+  }
+}
